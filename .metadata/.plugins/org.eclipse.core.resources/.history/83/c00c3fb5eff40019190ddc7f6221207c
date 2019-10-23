@@ -1,0 +1,29 @@
+package ui;
+
+import util.Console;
+
+public class PigLatinTranslatorApp {
+
+	public static void main(String[] args) {
+		System.out.println("Pig Latin Translator");
+		String choice = "y";
+		
+		while (choice.equalsIgnoreCase("y")) {
+			String sentence = Console.getString("Enter a line: ");
+			
+			String[] sentenceArray = sentence.toLowerCase().split(" ");
+			for (String s: sentenceArray) {
+				if (s.startsWith("a||e||i||o||u")) {
+					System.out.println("This worked");
+				}else {
+						System.out.println("Nope");
+					}
+					
+				}
+			}
+			
+			choice = Console.getYOrN("Continue?(y/n)");
+		}
+	}
+
+}

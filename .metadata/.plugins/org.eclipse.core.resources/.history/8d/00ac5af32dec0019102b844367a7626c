@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class GuessingGameApp {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to the Guess the Number Game");
+		System.out.println("++++++++++++++++++++++++++++++++++++");
+
+		Scanner sc = new Scanner(System.in);
+		String choice = "y";
+		int limit = 100;
+
+		while (choice.equalsIgnoreCase("y")) {
+			System.out.println("I'm thinking of a number between one and " + limit);
+			System.out.println("Try to guess it!\n");
+
+			int randNum = (int) ((Math.random() * 100) + 1);
+			int count = 0;
+			String isGuessed = "n";
+
+			while (isGuessed.equalsIgnoreCase("n")) {
+				System.out.println("Enter your guess");
+				int guess = sc.nextInt();
+				count++;
+
+				if (guess == randNum) {
+					secondaryStatement(count);
+					isGuessed = "y";
+				} else if (guess < randNum - 10) {
+					System.out.println("You are way too low, amigo");
+					continue;
+				} else if (guess < randNum) {
+					System.out.println("You are too low");
+					continue;
+				} else if (guess > randNum + 10) {
+					System.out.println("The amount you entered is too damn high");
+					continue;
+				} else {
+					System.out.println("You are too high");
+					continue;
+				}
+			}
+			System.out.println("Try again? (y/n)");
+			choice = sc.next();
+			if (choice.equalsIgnoreCase("y")) {
+				continue;
+			}
+			else if (choice.equalsIgnoreCase("n")) {
+				break;
+			} else {
+				System.out.println("That wasn't a choice");
+			}
+
+		}
+
+	}
+
+	public static void secondaryStatement(int count) {
+		System.out.println("You guessed it in " + count + " tries");
+		if (count <= 2) {
+			System.out.println("You're a wizard Harry");
+		} else if (count > 2 && count <= 7) {
+			System.out.println("Not too shabby");
+		} else {
+			System.out.println("I believed in you Anakin");
+		}
+	}
+
+}

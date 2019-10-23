@@ -1,0 +1,7 @@
+package ch08_classDemo;
+
+import Product;
+
+public class Book extends Product {
+
+}

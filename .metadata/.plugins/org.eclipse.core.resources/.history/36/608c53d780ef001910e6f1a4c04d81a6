@@ -1,0 +1,4 @@
+
+public class MonthlyFee extends Account {
+
+}

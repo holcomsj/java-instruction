@@ -1,0 +1,32 @@
+import java.util.Arrays;
+
+public class StudentScoreApp {
+
+	public static void main(String[] args) {
+		System.out.println("The Student Scores App");
+		
+		String choice = "y";
+		
+		while (choice.equalsIgnoreCase("y")) {
+			int studNum = Console.getIntWithinRange("Number of students: ", 1, 500);
+			Student[] students = new Student[studNum];
+			
+			for (int i = 0; i < studNum; i++) {
+			String firstName = Console.getString("Enter student first name: ");
+			String lastName = Console.getString("Enter student last name: ");
+			int score = Console.getIntWithinRange("Enter student score: ", 0, 100);
+			
+			students[i] = new Student(lastName, firstName, score);
+			}
+			Arrays.sort(students);
+			for (Student s: students) {
+				s.toString(); 
+			}
+			choice = Console.getYOrN("Continue?(y/n)");
+					
+			
+		}
+
+	}
+
+

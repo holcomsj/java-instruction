@@ -1,0 +1,6 @@
+
+public interface DepartmentConstants {
+	String ADMIN = "Administration";
+	String EDITORIAL = "Editorial";
+	String MARKETING = "Marketing";
+}

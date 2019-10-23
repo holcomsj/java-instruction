@@ -1,0 +1,10 @@
+
+public class ProductApp {
+
+	public static void main(String[] args) {
+		Book b1 = new Book("java", "Murach's Java", 57.50, "Joel Murach");
+		
+		b1.print();
+	}
+
+}

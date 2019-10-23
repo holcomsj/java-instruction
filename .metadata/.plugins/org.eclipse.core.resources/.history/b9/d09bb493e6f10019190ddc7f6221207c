@@ -1,0 +1,20 @@
+package UI;
+
+import util.Console;
+
+public class BattingAverageApp {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to the Batting Average Calculator");
+		
+		int atBats = Console.getInt("Enter number of at bats");
+		int[] atBatArray = new int[atBats];
+		System.out.println("0 = Out, 1 = Single, 2 = Double, 3 = Triple, 4 = Homerun");
+		for (int i = 0; i<atBats; i++) {
+			atBatArray[i]= Console.getInt("Result for at bat " + (i + 1) + ": ");
+			
+		}
+
+	}
+
+}

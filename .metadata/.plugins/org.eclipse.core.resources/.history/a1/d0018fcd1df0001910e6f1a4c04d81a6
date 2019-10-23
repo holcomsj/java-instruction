@@ -1,0 +1,9 @@
+
+public class SavingsAccount extends Account {
+	private double interestRate;
+	private double interestPayment;
+	
+
+	
+	
+}

@@ -1,0 +1,7 @@
+package business;
+
+public class CheckingAccount extends Account {
+	private double monthlyFee;
+
+	
+}

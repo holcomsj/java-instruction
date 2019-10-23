@@ -1,0 +1,115 @@
+import java.util.Scanner;
+
+public class GuessingGameApp {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome to the Guess the Number Game");
+		System.out.println("++++++++++++++++++++++++++++++++++++");
+
+		Scanner sc = new Scanner(System.in);
+		String choice = "y";
+		int limit = 100;
+
+		while (choice.equalsIgnoreCase("y")) {
+			System.out.println("I'm thinking of a number between one and " + limit);
+			System.out.println("Try to guess it!\n");
+
+			int randNum = (int) ((Math.random() * 100) + 1);
+			int count = 0;
+			boolean isGuessed = false;
+
+			while (!isGuessed) {
+				
+				int guess = getIntWithinRange(sc, "Enter number", 0, 101);
+				count++;
+				
+
+				if (guess == randNum) {
+					successStatement(count);
+					isGuessed = true;
+				} else if (guess < randNum - 10) {
+					System.out.println("You are way too low, amigo");
+					continue;
+				} else if (guess < randNum) {
+					System.out.println("You are too low");
+					continue;
+				} else if (guess > randNum + 10) {
+					System.out.println("The amount you entered is too damn high");
+					continue;
+				} else {
+					System.out.println("You are too high");
+					continue;
+				}
+			}
+			choice = getString(sc, "Try again? (y/n)");
+
+		}
+
+	}
+
+	public static void successStatement(int count) {
+		System.out.println("You guessed it in " + count + " tries");
+		if (count <= 3) {
+			System.out.println("You're a wizard Harry");
+		} else if (count > 3) {
+			System.out.println("Not too shabby");
+		} else if (count >= 7) {
+			System.out.println("I believed in you Anakin");
+		}
+	}
+
+	public static int getIntWithinRange(Scanner sc, String prompt, int min, int max) {
+		int i = 0;
+		boolean isValid = false;
+		while (!isValid) {
+			i = getInt(sc, prompt);
+			if (i <= min) {
+				System.out.println("Error! Number must be greater tha " + min + ".");
+			} else if (i >= max) {
+				System.out.println("Error! Number must be less tha " + max + ".");
+
+			} else {
+				isValid = true;
+			}
+		}
+		return i;
+	}
+
+	public static int getInt(Scanner sc, String prompt) {
+		int i = 0;
+		boolean isValid = false;
+		while (!isValid) {
+			System.out.println(prompt);
+			if (sc.hasNextInt()) {
+				i = sc.nextInt();
+				isValid = true;
+
+			} else {
+				System.out.println("Error! Invalid integer. Try again.");
+			}
+			sc.nextLine();
+		}
+		return i;
+	}
+
+	private static String getString(Scanner sc, String prompt) {
+		String s = "";
+		boolean isValid = false;
+		while (!isValid) {
+			System.out.println(prompt);
+			s = sc.nextLine();
+			if (s.equalsIgnoreCase("")) {
+				System.out.println("Error! Entry is required");
+				continue;
+			} else if (s.equalsIgnoreCase("y") || s.equalsIgnoreCase("n")) {
+				isValid = true;
+			} else {
+				System.out.println("Error! Only y or n is accepted.");
+				continue;
+
+			}
+		}
+		return s;
+	}
+
+}
