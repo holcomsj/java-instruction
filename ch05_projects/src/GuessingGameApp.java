@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 public class GuessingGameApp {
 
@@ -6,7 +6,7 @@ public class GuessingGameApp {
 		System.out.println("Welcome to the Guess the Number Game");
 		System.out.println("++++++++++++++++++++++++++++++++++++");
 
-		Scanner sc = new Scanner(System.in);
+		
 		String choice = "y";
 		int limit = 100;
 
@@ -41,7 +41,7 @@ public class GuessingGameApp {
 					continue;
 				}
 			}
-			choice = getString(sc, "Try again? (y/n)");
+			choice = Console.getString("Try again? (y/n)");
 
 		}
 

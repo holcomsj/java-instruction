@@ -1,0 +1,4 @@
+java	Murach's Java Programming	57.5
+mysql	Murach's MySQL	55.5
+andr	Murach's Android Programming	59.5
+jsp	something neat	69.9
