@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="installedFeatures">
+		<item value="com.chookapp.org.Bracketeer:1.2.0.201203031719"/>
+		<item value="com.chookapp.org.BracketeerCDT:1.2.0.201203031719"/>
+		<item value="com.chookapp.org.BracketeerJDT:1.2.0.201203031719"/>
+		<item value="com.chookapp.org.OverviewRulerBackground:1.1.0.201112231228"/>
 		<item value="com.ianbrandt.tools.m2e.mdp.feature:0.0.4.201409291703"/>
 		<item value="org.aspectj:1.9.2.201908130916"/>
 		<item value="org.eclipse.ajdt:2.2.4.201908130916"/>
@@ -109,8 +113,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Users\MAX-Student\Desktop\Murach files\java\eclipse\book_apps"/>
 			<item value="C:\Users\MAX-Student\Desktop\Murach files\java\eclipse\ex_starts"/>
+			<item value="C:\Users\MAX-Student\Desktop\Murach files\java\eclipse\book_apps"/>
 			<item value="C:\Users\MAX-Student\Desktop\Murach files\java\eclipse\ex_solutions"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
