@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;InterestCalculatorApp.java&apos; to &apos;ch03_1_TempApp/src/(default package)&apos;&#x0D;&#x0A;- Original project: &apos;ch03_3_InterestCalculator&apos;&#x0D;&#x0A;- Destination element: &apos;ch03_1_TempApp/src/(default package)&apos;&#x0D;&#x0A;- Original element: &apos;InterestCalculatorApp.java&apos;" description="Copy compilation unit" destination="=ch03_1_TempApp/src&lt;" element1="/src&lt;{InterestCalculatorApp.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1570801771747" units="1" version="1.0"/>
-</session>

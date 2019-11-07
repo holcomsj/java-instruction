@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;CommonDivisorCalculatorApp&apos; to &apos;CommonDivisorMethodsApp&apos;&#x0D;&#x0A;- Original project: &apos;ch05_classDemos&apos;&#x0D;&#x0A;- Original element: &apos;CommonDivisorCalculatorApp&apos;&#x0D;&#x0A;- Renamed element: &apos;CommonDivisorMethodsApp&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;CommonDivisorCalculatorApp&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{CommonDivisorCalculatorApp.java[CommonDivisorCalculatorApp" matchStrategy="1" name="CommonDivisorMethodsApp" qualified="false" references="true" similarDeclarations="false" stamp="1570719263946" textual="false" version="1.0"/>
-</session>
